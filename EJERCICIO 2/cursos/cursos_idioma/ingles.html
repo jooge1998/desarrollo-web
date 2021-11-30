@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+
+    <title>Document</title>
+
+    <style>
+    
+     *{
+
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+     }   
+
+    .header .img{
+
+        height: 200px;
+        width: 100%;
+        opacity: .9;
+        object-fit: cover;
+        object-position: 0 -7rem;
+
+
+    }
+
+    .content{
+
+        margin: 3rem 6rem;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .yl{
+        height: 40px;
+        width: 8px;
+        background: yellow;
+        position: absolute;
+        left: 75px;
+    }
+    .yl1{
+        height: 7px;
+        width: 40px;
+        background: yellow;
+        position: absolute;
+        top: -320px;
+        left: 120px;
+    }
+
+    .parragraph{
+
+        margin: .5rem 0;
+        font-size: .8rem;
+        font-weight: bold;
+
+    }    
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,320px);
+        grid-template-rows: 360px;
+        column-gap: 60px;
+        margin: 0 6rem 6rem 6rem;
+    }
+
+    .container .fondo ul{
+        position: absolute;
+        top: 50px;
+    }
+
+    .container .fondo h2{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+        
+    }
+
+    .container div{
+        display: grid;
+        position: relative;
+        font-size: .8rem;
+        color: white;
+        
+    }
+
+    .container .fondo img{
+        width: 100%;
+        height:126% ;
+        object-fit: cover;
+    }
+
+    .fondo::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height:100% ;
+        opacity: .75;
+        background:rgb(17, 17, 17);;
+    }
+
+    .container h2,
+    .container ul{
+        position: absolute;
+        padding: 1rem;
+    }
+
+    .container2,
+    .container3{
+        background:rgb(215, 215, 215);
+        border-radius: 20px;
+        padding: 10px;
+       
+    }
+
+    .container2 .title1{
+        text-align: center;
+        font-size: .8rem;
+        margin: 3rem 6rem ;
+        display: flex;
+        justify-content: center;
+      
+    }
+
+    .container2 .title2{
+        margin: 12.5rem 6rem;
+        font-size: .8rem;
+    }
+
+    .container2 .ul1{
+        margin: 4.5rem .5rem;
+        font-size: .74rem;
+    }
+
+    .container2 .ul2{
+        margin: 13.5rem .5rem 0;
+      
+      
+    }
+
+    .container2 img{
+        height: 40px;
+        margin: 2px auto;
+        background: green;
+        border-radius: 5px;
+        padding: 3px;
+        
+    }
+
+    .container2 h2,
+    .container2 ul{
+        color: black;
+    }
+
+
+    .container3 img{
+        height: 2.5rem;
+        margin: 10px auto;
+        background: green;
+        border-radius: 5px;
+        padding: 5px;
+        color: honeydew;
+
+    }
+
+    .container3 .title1{
+        font-size: .8rem;
+        color: black;
+        margin: 4rem 6rem;
+    }
+
+    .container3 ul{
+
+        margin: 6rem 1rem;
+        color: black;
+
+    }
+
+
+    /* cursos adicionales grid */
+
+    .cursos_adicionales{
+	
+	display: grid;
+	grid-template-columns: 80% ;
+	margin: 0 5rem 0 5rem;
+	padding: 1rem;
+
+    }
+
+    .cursos_adicionales .categorias{
+        background: white;
+        padding: 1rem;
+        margin: 0.8rem;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        transition: all 400ms ease-out;
+        color: black;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .cursos_adicionales .categorias:hover{
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform: translateY(-3%);
+        cursor: pointer;
+    }
+
+    .cursos_adicionales .categorias .img_categoria{
+        height: 100px;
+        width: auto;
+        margin: 0 3rem 0 0;
+
+    }
+
+    .cursos_adicionales .categorias .n_cursos{
+        margin-top: 1rem;
+        color: gray;
+    }
+
+    .cursos_proximos{
+        text-align: center;
+    
+    }
+        
+    </style>
+
+</head>
+<body>
+        
+    <header class="header">
+
+        <div>
+            <img class="img" src="../../img/INGLES/banner.jpeg" alt="">
+
+        </div>
+
+    </header>
+
+    <div class="content">
+        <div class="yl">
+
+        </div>
+
+        <h1 class="title"> 
+            INGLES
+        </h1>
+
+        <p class="parragraph">
+            ofrece a sus alumnos la posibilidad de aprender inglés en línea de una manera cómoda y con total flexibilidad de horario, ritmo y lugar de estudio.
+        </p>
+
+
+    </div>
+
+
+    <div class="container">
+       
+        <video controls width="350" height="350">
+            <source src="../../videos/Ingles/WhatsApp Video 2021-11-27 at 15.39.40.mp4" type="video/mp4">
+        </video>
+
+        <div class="container2">
+
+                <img src="/img/Programas/Call_center/check-list.svg" alt="">
+
+                <h2 class="title1">SEMESTRE I</h2>
+               <ul class="ul1">
+                 <li> Informática</li>  
+                 <li>Ética y educación ambiental.</li>  
+                 <li>Matemática comercial y estadística</li>  
+                 <li>Ventas</li>   
+                 <li> Producción y administración de documentos (digitación)</li>  
+                 <li> Gestión comercial y tele-mercadeo I</li> 
+                 <li> Producción y administración de documentos (redacción)</li> 
+                 <li> Servicio al cliente</li> 
+                </ul>
+
+               <h2 class="title2">SEMESTRE II</h2>
+               <ul class="ul2">
+                    <li>Ofimática</li>
+                    <li>Salud Ocupacional</li>
+                    <li>Negociación de productos</li>
+                    <li>Atención al Usuario</li>
+                    <li>Ingles I</li>
+                    <li>Gestión Comercial y tele-mercadeo II</li>
+                    <li>Seminario I</li>
+                    <li>Seminario II</li>
+        
+        </div>
+
+        <div class="container3">
+
+            <img src="/img/Programas/Call_center/check-mark-black-outline (1).svg" alt="">
+
+            <h2 class="title1">REQUISITOS</h2>
+            
+            <ul>
+                <li>Ser bachiller o tener aprobado hasta noveno grado.   </li><br>
+                <li>Presentar su hoja de vida</li><br>
+                <li>2 Fotos 3 x 4 fondo azul</li><br>
+                <li>Copia del diploma o acta de grado</li><br>
+                <li>Fotocopia del documento de identidad</li><br>
+                <li>Cancelar $20.000 pesos correspondientes al costo de inscripción</li><br>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+    <h2 class="cursos_proximos">Cursos proximos</h2>
+    
+
+    <div class="cursos_adicionales">
+
+
+        <a href="#" class="categorias">
+            <img class="img_categoria" src="../../img/PROXIMOS CURSOS/ARTE.jpeg" alt="">
+
+            <div class="container_texto">
+                <h2 >ARTE</h2>
+                <p class="n_cursos">El dominio de Artes creativas describe la variedad de actividades artísticas que permiten a los niños usar su imaginación, creatividad y expresar ideas en una variedad de medios.</p>
+            </div>
+        </a>
+
+        <a href="#" class="categorias">
+            <img class="img_categoria" src="../../img/PROXIMOS CURSOS/BALLET.jpeg" alt="">
+
+            <div class="container_texto">
+                <h2 >BALLET</h2>
+                <p class="n_cursos">La danza es la acción o manera de bailar. Se trata de la ejecución de movimientos al ritmo de la música que permite expresar sentimientos y emociones. Se estima que la danza fue una de las primeras manifestaciones artísticas de la historia de la humanidad.</p>
+            </div>
+        </a>
+
+        <a href="#" class="categorias">
+            <img class="img_categoria" src="../../img/PROXIMOS CURSOS/MUSICA.jpeg" alt="">
+
+            <div class="container_texto">
+                <h2 >MUSICA</h2>
+                <p class="n_cursos">La música (del griego: μουσική [τέχνη] - mousikē [téchnē], «el arte de las musas») es, según la definición tradicional del término, el arte de crear y organizar sonidos y silencios respetando los principios fundamentales de la melodía, la armonía y el ritmo, mediante la intervención de complejos procesos psicoanímicos.</p>
+            </div>
+        </a>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
